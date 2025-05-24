@@ -1,0 +1,243 @@
+:root{
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --background-color: #FFFFFF;
+    --secondary-background-color: #EDEAE6;
+    --text-color: #222222;
+    --font-family: popins, sans-serif; 
+    --font-size: 20px;
+    --font-weight: 400;
+    --header-font-size: 56px;
+    --header-font-weight: 500;
+    --primary-text-color: #ffffff;
+     --header-text-color: #CA9D75;      /*btn and hearder color */
+    --secondary-btn-color: #2C3B62;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+}
+h2{
+    font-size: var(--header-font-size);
+    font-weight: var(--header-font-weight);
+    color: var(--header-text-color);
+}
+
+ p{
+    font-size: 20px;
+    font-weight: var(--font-weight);
+    color: var(--text-color);
+    margin-top: 10px;
+    line-height: 1.6;
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: transparent;
+
+}
+ nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: transparent;
+ }
+
+/* nav css */
+
+/* hero css start */
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url('./img/HeroBanner.png');
+    background-size: cover;
+    background-position: center;
+}
+.hero h3{
+    font-size: 48px;
+    font-weight: var(--header-font-weight);
+    color: var(--primary-text-color);
+    text-transform: uppercase;
+
+}
+.hero h1{
+    font-size: var(--header-font-size);
+    font-weight: var(--header-font-weight);
+    color: var(--header-text-color);
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.hero_content_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.hero_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: var(--header-text-color);
+    color: var(--primary-text-color);
+    font-size: 24px;
+    font-weight: var(--font-weight);
+    text-decoration: none;
+    border: none;
+}
+
+/* Apartments SALE */
+.Apartments_sale{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3% 7%;
+    width: 100%;
+    background-color: var(--secondary-background-color);
+    gap: 20px;
+}
+
+.Apartments_sale_img , .sale_img{
+    width: 40%;
+    height: auto;
+}
+.Apartments_sale_content, .sale_content_text{
+    width: 55%;
+}
+.Apartments_sale_img, .sale_img img{
+    width: 100%;
+    height: auto;
+}
+/* .Apartments_sale_content h2{
+    font-size: var(--header-font-size);
+    font-weight: var(--header-font-weight);
+    color: var(--header-text-color);
+} */
+/* .Apartments_sale_content p{
+    font-size: 20px;
+    font-weight: var(--font-weight);
+    color: var(--text-color);
+    margin-top: 10px;
+    line-height: 1.6;
+} */
+.Apartments_sale_btn, .secondary_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: var(--secondary-btn-color);
+    color: var(--primary-text-color);
+    font-size: 24px;
+    font-weight: var(--font-weight);
+    text-decoration: none;
+    border: none;
+    margin-top: 20px;
+}
+.benefits{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3% 7%;
+    width: 100%;
+    background-color: var(--background-color);
+    gap: 20px;
+    text-align: center;
+}
+
+.benefits_img {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.benefits_img_item {
+  width: 24%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: left;
+  position: relative;
+}
+
+/* Optional overlay for better text visibility */
+.benefits_img_item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* dark overlay */
+  z-index: 0;
+}
+
+.benefits_img_item * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Specific backgrounds for each item */
+.bg-heritage {
+  background-image: url('./img/Rectangle\ 8.png');
+}
+
+.bg-connectivity {
+  background-image: url('./img/Rectangle\ 9.png');
+}
+
+.bg-landmarks {
+  background-image: url('./img/Rectangle\ 10.png');
+}
+.benefits_img_item h4 {
+    font-size: 32px;
+    font-weight: var(--header-font-weight);
+    color: var(--primary-text-color);
+    margin-bottom: 10px;
+}
+.benefits_img_item p{
+    color: var(--primary-text-color);
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 1.2;
+}
+
+.sale{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3% 7%;
+    width: 100%;
+    background-color: var(--secondary-background-color);
+    gap: 20px;
+
+    text-align: center;
+}
+.sale_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+.reverce_row{
+    flex-direction: row-reverse;
+}
